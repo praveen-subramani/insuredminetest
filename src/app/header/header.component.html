@@ -1,0 +1,28 @@
+<div class="full background col-lg-12 col-xl-12 col-md-12 nopad" *ngIf=" !gems.gal">
+<div class="col-xl-6 col-md-6 col-lg-6 leftalign sd">
+<div class="logo"> </div>
+</div>
+<div class="col-xl-6 col-md-6 col-lg-6 leftalign sa">
+<div class="rightalign ff fd" role="button" (click)="openDialog()">Log-in</div> 
+<div class="rightalign ff" role="button" (click)="about()">About</div> 
+<div class="rightalign fg" role="button" (click)="home()">Home</div> 
+<!-- <div class="rightalign ff fd"  *ngIf=" gems.gal" role="button" (click)="gall()">Gallery</div>  -->
+</div>
+
+</div>
+
+
+
+<div class="full background col-lg-12 col-xl-12 col-md-12 nopad"  *ngIf=" gems.gal">
+    <div class="col-xl-4 col-md-4 col-lg-4 leftalign sd">
+    <div class="logo"> </div>
+    </div>
+    <div class="col-xl-8 col-md-8 col-lg-8 leftalign sa">
+        <div class="rightalign ff fd" role="button" >{{gems.user}}</div> 
+    <div class="rightalign ff " role="button" (click)="home1()">Log-out</div> 
+    <div class="rightalign ff" role="button" (click)="about()">About</div> 
+    <div class="rightalign fg" role="button" (click)="home()">Home</div> 
+    <div class="rightalign ff fd"  role="button" (click)="gall()">Gallery</div> 
+    </div>
+    
+    </div>

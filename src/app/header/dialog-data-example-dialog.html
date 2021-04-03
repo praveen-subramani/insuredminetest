@@ -1,0 +1,31 @@
+<div class="col-xl-12 col-lg-12 col-md-12 nopad">
+<h1>Login For Private Users</h1>
+
+<div class="col-xl-12 col-lg-12 col-md-12 nopad">
+<form  [formGroup]="reaction "  class="example-form">
+    <mat-form-field class="example-full-width po">
+      <mat-label>User ID</mat-label>
+      <input  formControlName="id" matInput placeholder="Name" >
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width poo">
+      <mat-label>Password</mat-label>
+      <input  matInput autocomplete="off" formControlName="password" type='password' placeholder="password">
+    </mat-form-field>
+    <div *ngIf="!forshowmeaasge">please enter correct user name and password</div>
+    <div *ngIf="passwordincrct">please enter correct passwoed</div>
+    <div *ngIf="usernameincrct">please enter user id</div>
+    <button class="dd" (click)="loop() "type="submit" >Log-In</button>
+  </form>
+ 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
